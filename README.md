@@ -16,7 +16,8 @@ A REST API for managing e-commerce products using Node.js, Express, MongoDB, and
 3. Create .env: PORT=5000 MONGO_URI=your_connection_string
 4. Run: npm run dev 
 
-## Base URL http://localhost:5000 
+## Base URL 
+http://localhost:5000 
 
 ## Product Endpoints 
 - POST /api/products 
@@ -37,13 +38,15 @@ POST /api/products
 Purpose: Create a product. 
 
 Body: 
+```json
 { 
-        "name": "Mechanical Keyboard", 
-        "description": "RGB keyboard", 
-        "price": 1850, 
-        "category": "Accessories", 
-        "stock": 12 
+    "name": "Mechanical Keyboard", 
+    "description": "RGB keyboard", 
+    "price": 1850, 
+    "category": "Accessories", 
+    "stock": 12 
 } 
+```
 
 Success: 201 Created 
 Possible errors: 400 Bad Request, 500 Interal Server Error
@@ -78,9 +81,11 @@ PATCH /api/products/:id
 Purpose: Modify specific fields of a product by id
 
 Body: 
+```json
 {
     "stock": 13
 }
+```
 
 Success: 200 OK
 Possible errors: 400 Bad Request, 404 Not Found, 500 Internal Server Error
