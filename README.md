@@ -14,7 +14,9 @@ A REST API for managing e-commerce products using Node.js, Express, MongoDB, and
 1. Clone the repository 
 2. Run: npm install 
 3. Create .env: PORT=5000 MONGO_URI=your_connection_string
-4. Run: npm run dev ## Base URL http://localhost:5000 
+4. Run: npm run dev 
+
+## Base URL http://localhost:5000 
 
 ## Product Endpoints 
 - POST /api/products 
@@ -34,7 +36,8 @@ POST /api/products
 
 Purpose: Create a product. 
 
-Body: { 
+Body: 
+{ 
         "name": "Mechanical Keyboard", 
         "description": "RGB keyboard", 
         "price": 1850, 
@@ -74,7 +77,8 @@ PATCH /api/products/:id
 
 Purpose: Modify specific fields of a product by id
 
-Body: {
+Body: 
+{
     "stock": 13
 }
 
