@@ -68,9 +68,9 @@ Success: 200 OK
 Possible errors: 400 Bad Request, 404 Not Found, 500 Internal Server Error
 
 ### Get Product Filter/Search By 
-GET /api/products/?<key>=<value>
+GET /api/products/?\<key>=\<value>
 
-Purpose: Get a product based on query parameter key and value pair
+Purpose: Get a product based on query parameter key–value pair.
 
 Success: 200 OK
 Possible errors: 400 Bad Request, 404 Not Found, 500 Internal Server Error
